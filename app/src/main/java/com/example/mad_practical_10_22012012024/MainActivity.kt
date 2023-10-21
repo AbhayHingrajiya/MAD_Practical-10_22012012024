@@ -33,6 +33,8 @@ class MainActivity : AppCompatActivity() {
             }
             val personListView=findViewById<ListView>(R.id.listView1)
             personListView.adapter = ContactAdapter(this, personList)
+
+
         } catch (ee: JSONException) {
             ee.printStackTrace()
         }
